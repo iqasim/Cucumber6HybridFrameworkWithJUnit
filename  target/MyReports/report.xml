@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="74.628">
+<testcase classname="This feature file contains the various features of the login page" name="As a user I want to validate login Page title" time="14.565">
+<system-out><![CDATA[Given User is on the login page.............................................passed
+When User observe the title of the page.....................................passed
+Then Login page title should display "Login - My Store".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the various features of the login page" name="As a user I want to validate that forget password link should display" time="13.219">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Forgot your password?111&quot;}&#10;  (Session info: chrome=87.0.4280.88)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-354O6RMQ', ip: '169.254.162.92', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\iqasim\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: a1aa5759940f9648e928f5054e99a522&#10;*** Element info: {Using=link text, value=Forgot your password?111}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User is on the login page.............................................passed
+Then Login page should display forget password link.........................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Forgot your password?111"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-354O6RMQ', ip: '169.254.162.92', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\iqasim\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a1aa5759940f9648e928f5054e99a522
+*** Element info: {Using=link text, value=Forgot your password?111}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.pages.LoginPage.validateForgotPasswordLink(LoginPage.java:31)
+	at stepdefinitions.LoginPageSteps.login_page_should_display_forget_password_link(LoginPageSteps.java:36)
+	at ✽.Login page should display forget password link(file:///C:/Users/iqasim/Cucumber/Cucumber.HybridFramework/src/test/resources/com/features/LoginPage.feature:11)
+]]></failure>
+</testcase>
+<testcase classname="This feature file contains the various features of the login page" name="As a user I want to login with correct credentials" time="14.908">
+<system-out><![CDATA[Given User is on the login page.............................................passed
+When User enters "niit.imran@gmail.com" as a username.......................passed
+And Enter "Selenium@12345" as a password....................................passed
+And Click on login button...................................................passed
+Then Home page should display...............................................passed
+And Home page title should be "My account - My Store".......................passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the account page test cases" name="Verification of Account Page title" time="15.877">
+<system-out><![CDATA[Given A user is on the login page...........................................passed
+And Enters credential and click on the login button.........................passed
+Then "My account - My Store" should be Account page title...................passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the account page test cases" name="Verify the Account sections" time="15.524">
+<system-out><![CDATA[Given A user is on the login page...........................................passed
+And Enters credential and click on the login button.........................passed
+Then Following section should display.......................................passed
+And Total count should be 6.................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
