@@ -1,26 +1,37 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "f6b7e450-7dd2-4a1f-81d2-1e5e688f9340",
-    "feature": "This feature file contains the test cases related to Women\u0027s tab",
-    "scenario": "Validating the Women Tab title",
-    "start": 1608939204732,
+    "id": "1cb2be89-ef8e-4ade-b10d-f836dc4f0f3d",
+    "feature": "This feature file contains the various features of the login page",
+    "scenario": "As a user I want to login with correct credentials",
+    "start": 1610690979730,
     "group": 1,
     "content": "",
     "tags": "",
-    "end": 1608939324125,
+    "end": 1610690997360,
     "className": "passed"
   },
   {
-    "id": "37aee8e5-59fd-4b4e-b892-7881bd799ab5",
-    "feature": "This feature file contains the test cases related to Women\u0027s tab",
-    "scenario": "Verify the subcategories",
-    "start": 1608939324148,
+    "id": "1e98699c-109c-4bd7-a956-ed2e9a4d8e7f",
+    "feature": "This feature file contains the various features of the login page",
+    "scenario": "As a user I want to validate that forget password link should display",
+    "start": 1610690962663,
     "group": 1,
     "content": "",
     "tags": "",
-    "end": 1608939451655,
+    "end": 1610690979668,
     "className": "failed"
+  },
+  {
+    "id": "c6bb90e1-818e-4d05-b5d7-632284130a4f",
+    "feature": "This feature file contains the various features of the login page",
+    "scenario": "As a user I want to validate login Page title",
+    "start": 1610690943468,
+    "group": 1,
+    "content": "",
+    "tags": "",
+    "end": 1610690962621,
+    "className": "passed"
   }
 ]);
 CucumberHTML.timelineGroups.pushArray([
